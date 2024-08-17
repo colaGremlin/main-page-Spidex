@@ -2,6 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Load custom font */
+@font-face {
+  font-family: 'OptimaDisplay Book';
+  src: url('/fonts/OptimaDisplay-Book.otf') format('opentype');
+}
+
+/* Apply custom font globally */
+body, input, button, h1,h2 pre {
+  font-family: 'OptimaDisplay Book', sans-serif;
+  background-color: white;
+  font-weight: normal;
+}
+
+footer p{
+  font-family: 'OptimaDisplay Book', sans-serif;
+  font-weight: normal;
+}
+
+/* Footer styles */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Ensure body and html take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Utility class */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -31,3 +78,4 @@ body {
     text-wrap: balance;
   }
 }
+ */

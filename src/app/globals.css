@@ -2,35 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Load custom font */
-@font-face {
-  font-family: 'OptimaDisplay Book';
-  src: url('/fonts/OptimaDisplay-Book.otf') format('opentype');
-}
-
-/* Apply custom font globally */
-body, input, button, h1,h2 pre {
-  font-family: 'OptimaDisplay Book', sans-serif;
-  background-color: white;
+/* Apply new custom font globally */
+body, input, button, h1, h2, pre,footer p {
+  font-family: 'DM Sans', sans-serif;
   font-weight: normal;
 }
 
-footer p{
-  font-family: 'OptimaDisplay Book', sans-serif;
-  font-weight: normal;
-}
-
-/* Footer styles */
 footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-}
-
-/* Ensure body and html take full height */
-html, body {
-  height: 100%;
-  margin: 0;
 }
 
 /* Utility class */
@@ -38,44 +19,9 @@ html, body {
   .text-balance {
     text-wrap: balance;
   }
-}
 
-
-
-
-
-
-
-
-
-/* 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .border-gradient {
+    border-image: radial-gradient(ellipse 200% 100% at bottom left, #183EC2, #EAEEFE 66%);
+    border-image-slice: 1;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
- */
